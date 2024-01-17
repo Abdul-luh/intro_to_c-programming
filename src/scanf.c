@@ -6,22 +6,40 @@ int main() {
     char operator;
 
     // printf("input the operator : ");
-    // scanf("%c", &operator);
+    scanf("%c", &operator);
 
     // printf("input the first operand : ");
-    // scanf("%d", &n1);
+    scanf("%d", &n1);
 
     // printf("input the second operand : ");
-    // scanf("%d", &n2);
+    scanf("%d", &n2);
 
-    printf("input the values ( number, number, operator) : ");
-    scanf("%d %d %c",&n1, &n2, &operator);
+    int result;
+
+    switch (operator){
+    case '+':
+        result= n1 + n2;
+        printf("%d", result);
+        break;
+    case '-':
+        result= n1 - n2;
+        printf("%d", result);
+        break;
+    case '*':
+        result = n1 * n2;
+        printf("%d", result);
+        break;
+    case '/':
+        result= n1 / n2;
+        printf("%d", result);
+        break;
+    
+    default:
+        break;
+    }
+
+    printf("\n %d %c %d = %d", n1, operator, n2,  result);
 
 
-
-    int result = n1 + n2;
-    printf("the sum %c is %d", operator, result);
-
-
-    return 0;
+    return result;
 }
