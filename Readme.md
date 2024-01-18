@@ -5,6 +5,9 @@
 **gcc ./src/functions.c -o ./dist/functions.exe**
 **gcc ./src/recursion.c -o ./dist/recursion.exe**
 **gcc ./src/factorial.c -o ./dist/factorial.exe**
+**gcc ./src/arrays.c -o ./dist/arrays.exe**
+**gcc ./src/multidimensional.c -o ./dist/multidimensional.exe**
+**gcc ./src/string.c -o ./dist/string.exe**
 
 ### format specifiers
 
@@ -13,6 +16,7 @@
 %lf - double
 %f - float
 %c - char
+%s - char[] - string
 
 %2lf - double(2 d.p.)
 
